@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                // Get some code from a GitHub repository
+                // Get  code from a GitHub repository
                 git url: 'https://github.com/rahmandiehard/demorep.git', branch: 'master'
              
             }
         }
-            stage('Build') {
+        stage('Build') {
             steps {
-                sh "mvn clean install"
+             sh "mvn clean install"
              
             }
         }
